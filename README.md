@@ -1,8 +1,8 @@
-#Run the API Larabel Project
-You can find it here: https://github.com/SadPopu/Arcada-Project
+### First off all you need to have the API application running ###
+You can find it [here](https://github.com/SadPopu/Arcada-Project)
 
 ### How do I run this Project ###
-* [Repository](https://github.com/SadPopu/Arcada-Project-React-Js-Crud)
+* Get it from the [Repository](https://github.com/SadPopu/Arcada-Project-React-Js-Crud)
 
 ### How do I get set up? ###
 
