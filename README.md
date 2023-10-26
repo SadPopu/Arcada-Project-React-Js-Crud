@@ -14,4 +14,4 @@ You can find it [here](https://github.com/SadPopu/Arcada-Project)
 * - npm install
 * - npm start
 
-### Don't forget, this Application uses an Laravel API get it [here](https://github.com/SadPopu/Arcada-Project)###
+### Don't forget, this Application was created to react to his Laravel API so get it [here](https://github.com/SadPopu/Arcada-Project) ###
