@@ -21,15 +21,15 @@ function Home() {
     <h1>Our Services</h1>
     <div className="service-boxes">
         <div className="service-box">
-        <img src={process.env.PUBLIC_URL + '/asd.png'} alt="Service" className='left-image' />
+        <img src={process.env.PUBLIC_URL + 'asd.png'} alt="Service" className='left-image' />
             <p className='service-box-text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div className="service-box">
-        <img src={process.env.PUBLIC_URL + '/asd.png'} alt="Service" className='left-image' />
+        <img src={process.env.PUBLIC_URL + 'asd.png'} alt="Service" className='left-image' />
             <p className='service-box-text' >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div className="service-box">
-        <img src={process.env.PUBLIC_URL + '/asd.png'} alt="Service" className='left-image' />
+        <img src={process.env.PUBLIC_URL + 'asd.png'} alt="Service" className='left-image' />
             <p className='service-box-text' >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
     </div>

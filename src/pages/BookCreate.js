@@ -22,6 +22,7 @@ function BookCreate(){
     });
 
     const [authors, setauthors] = useState([]);
+    const [noAuthors, setNoAuthors] = useState(false);
 
     useEffect(() => {
         
@@ -29,9 +30,34 @@ function BookCreate(){
             console.log(res);
             setauthors(res.data.authors);
             setLoading(false);
+        }).catch((error) => {
+            if (error.response) {
+                if (error.response.status === 404) {
+                    setLoading(false);
+                    setNoAuthors(true)
+                } else if (error.response.status === 500) {   
+                    setLoading(false);
+                    setNoAuthors(true)
+                }
+            }
         });
+      }, []);
 
-    }, [])
+      if (noAuthors) {
+        return (
+          <div className="container mt-5" style={{ ...styleSheet.mainPaddingTop, textAlign: "center", display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+            <h1>You can't create a book wihtout Authors Registered in the system. Do you want to create a new Author?</h1>
+            <Link
+              to="/authors/create"
+              className="btn btn-primary"
+              style={styleSheet.createButton}
+            >
+              Add Author
+            </Link>
+            <img style={{marginTop:"50px"}} src={process.env.PUBLIC_URL + '/thinking.png'} alt="Service" />
+          </div>
+        );
+      }
 
     const handleInput = (e) => {
         e.persist();
@@ -73,7 +99,7 @@ function BookCreate(){
 
     if(loading){
         return(
-            <div>
+            <div className="container mt-5">
                 <Loading/>
             </div>
         )

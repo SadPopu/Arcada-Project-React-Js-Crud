@@ -59,7 +59,7 @@ function AuthorCreate(){
 
     if(loading){
         return(
-            <div>
+            <div className="container mt-5">
                 <Loading/>
             </div>
         )

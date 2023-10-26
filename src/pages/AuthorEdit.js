@@ -80,7 +80,7 @@ function AuthorEdit(){
 
     if(loading){
         return(
-            <div>
+            <div className="container mt-5">
                 <Loading/>
             </div>
         )
@@ -96,7 +96,7 @@ function AuthorEdit(){
     }
     return(
         <div>
-             <div className="container mt-5">
+             <div className="container mt-5" style={{paddingTop:"50px"}}>
             <div className="row">
                 <div className="col-md-12">
                     <div className="card">

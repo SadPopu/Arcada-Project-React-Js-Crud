@@ -3,6 +3,7 @@ import '../assets/css/Contact.css';
 
 function Contact() {
     return (
+        <div className="container mt-5">
         <div className='main-container'>  
             <div className="contact-container">
                 <h1>Contact Us</h1>
@@ -23,6 +24,7 @@ function Contact() {
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
             </div>
+        </div>
         </div>
     );
 }

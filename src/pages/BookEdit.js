@@ -93,7 +93,7 @@ function BookEdit(){
 
     if(loading){
         return(
-            <div>
+            <div className="container mt-5">
                 <Loading/>
             </div>
         )
@@ -108,8 +108,8 @@ function BookEdit(){
 
     }
     return(
-        <div>
-             <div className="container mt-5">
+        <div style={{paddingTop:"50px"}}>
+             <div className="container mt-5" >
             <div className="row">
                 <div className="col-md-12">
                     <div className="card">
