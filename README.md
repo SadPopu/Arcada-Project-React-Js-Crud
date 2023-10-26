@@ -2,7 +2,6 @@
 You can find it here: https://github.com/SadPopu/Arcada-Project
 
 ### How do I run this Project ###
-
 * [Repository](https://github.com/SadPopu/Arcada-Project-React-Js-Crud)
 
 ### How do I get set up? ###
