@@ -1,18 +1,17 @@
-# Clone the repository
-git clone https://github.com/yourusername/your-project.git
+#Run the API Larabel Project
+You can find it here: https://github.com/SadPopu/Arcada-Project
 
-# Navigate to the project directory
-cd your-project
+### How do I run this Project ###
 
-# Install dependencies
-composer install
+* [Repository]([(https://github.com/SadPopu/Arcada-Project-React-Js-Crud)])
 
-# Configure environment variables
-cp .env.example .env
-php artisan key:generate
+### How do I get set up? ###
 
-# Set up the database and run migrations
-php artisan migrate
+* [Install NODE]([(https://nodejs.org/en)])
 
-# Start the development server
-php artisan serve
+### How do I start the application
+* Run the following cmd in the main directory:
+* - npm install
+* - npm start
+
+### Don't forget, this Application uses an Laravel API get it [here]([https://github.com/SadPopu/Arcada-Project])###
