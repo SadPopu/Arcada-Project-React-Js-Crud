@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loading from "../components/Loading";
+import { API } from '../api';
 
 function Book(){
     
@@ -39,7 +40,7 @@ function Book(){
     
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/books')
+        axios.get(API + '/books')
             .then((res) => {
                 console.log(res);
                 setBooks(res.data.books);
@@ -64,7 +65,7 @@ function Book(){
         const thisClicked = e.currentTarget;
         thisClicked.innerText = "Deleting ..."
 
-        axios.delete(`http://127.0.0.1:8000/api/books/${id}/delete`).then(res => {
+        axios.delete(`${API}/books/${id}/delete`).then(res => {
 
             alert(res.data.message);
             thisClicked.closest("tr").remove();

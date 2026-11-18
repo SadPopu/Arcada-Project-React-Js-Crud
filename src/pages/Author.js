@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loading from "../components/Loading";
+import { API } from '../api';
 
 function Author() {
 
@@ -40,7 +41,7 @@ function Author() {
   const [noAuthors, setNoAuthors] = useState(false);
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/authors").then((res) => {
+    axios.get(API + "/authors").then((res) => {
       console.log(res);
       setAuthors(res.data.authors);
       setLoading(false);
@@ -64,7 +65,7 @@ function Author() {
     thisClicked.innerText = "Deleting ...";
 
     axios
-      .delete(`http://127.0.0.1:8000/api/authors/${id}/delete`)
+      .delete(`${API}/authors/${id}/delete`)
       .then((res) => {
         alert(res.data.message);
         thisClicked.closest("tr").remove();

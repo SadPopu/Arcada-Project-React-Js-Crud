@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../components/Loading";
+import { API } from '../api';
 
 function AuthorCreate(){
 
@@ -35,7 +36,7 @@ function AuthorCreate(){
             surname: author.surname,
         }
 
-        axios.post('http://127.0.0.1:8000/api/authors', data).then(res => {
+        axios.post(API + '/authors', data).then(res => {
 
             alert(res.data.message);
             navigate('/authors');
